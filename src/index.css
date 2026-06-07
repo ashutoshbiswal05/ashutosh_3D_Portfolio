@@ -1,0 +1,23 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-btn {
+  transition: all 0.3s ease;
+}
+
+.nav-btn.active {
+  background: #6fb7ff;
+  color: white;
+
+  box-shadow:
+    0 0 10px #6fb7ff,
+    0 0 20px #6fb7ff,
+    0 0 30px #6fb7ff;
+}

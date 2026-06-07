@@ -1,0 +1,65 @@
+.cyber-close:hover {
+  transform: scale(1.08);
+
+  color: #ff6b6b;
+
+  border-color: #ff6b6b;
+
+  box-shadow:
+    0 0 10px #ff6b6b,
+    0 0 20px rgba(255,107,107,.5);
+}
+
+.gear-spin {
+  animation: gearRotate linear infinite;
+}
+
+.gear-spin-reverse {
+  animation: gearRotateReverse linear infinite;
+}
+
+@keyframes gearRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gearRotateReverse {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+.learning-topics {
+  margin-top: 24px;
+}
+
+.learning-topics h3 {
+  margin-bottom: 12px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #89c4ff;
+}
+
+.topic-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.topic-tag {
+  padding: 8px 14px;
+  border: 1px solid rgba(120, 180, 255, 0.25);
+  background: rgba(80, 120, 255, 0.08);
+  color: #d4e8ff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
